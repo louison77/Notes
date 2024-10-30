@@ -17,7 +17,7 @@
 
 ---
 
-Terraform is a command line tool. The main commands used to manage the resources are: 
+Terraform is a command line tool. The main commands used to manage the resources are:
 
 1. `terraform init` : It is the command that allows to initialize the terraform repository. Actually this command import the required provider to execute the code.
 2. `terraform plan` : It shows the resources that will be created, modified and destroy when applying the plan.
