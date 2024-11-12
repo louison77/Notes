@@ -29,3 +29,5 @@
 * By default, the username is postgres and the default database is also called postgres.
 * The main postgresql's configuration file is located at `/etc/postresql/<version number>/main.postgresql.conf`. In this file, to connect outside of localhost, it is important to change `listen_addresses = '*'`
 * The client connections file managment is `/etc/postgresql/11/main/pg_hba.conf`.
+* PostgreSQL service default port is **5432**
+* When installing Postgres as a command line tool or using the container image, there are few mandatory environment variables: **POSTGRES_PASSWORD** (password of the default user), **POSTGRES_USER** (user with superuser privileges and also default database name), **POSTGRES_DB** (name of the default database)
