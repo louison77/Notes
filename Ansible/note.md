@@ -9,8 +9,12 @@
 * Ansible can execute tasks in parallel on different machines but it need to wait thet completion of each tasks for all the machines.
 * In theory, Ansible can only be installed on Linux and MacOs operation systems.
 * Ansible uses Yaml to write its playbooks.
+* Ansible works by executing tasks on distant hosts. These hosts are defined in an inventory that can be static or dynamic. Static inventory are files listing target servers.
+* A playbooks is divided into tasks and hosts components.
 
 ## Main commands
+
+* `ansible-playbook -i inventory playbook.yaml --check` : This command check if the code works correctly before running it.
 
 ## Good practices and tips
 
@@ -27,4 +31,15 @@ pip3 install ansible --user
 To choose a specific version of ansible to install:
 
 ```pip3 install --user ansible==4.1.0
+```
+
+### Playbook's example
+
+```- name: Installation de Nginx sur un serveur
+  hosts: webservers
+  tasks:
+    - name: Installer Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
 ```
