@@ -15,6 +15,8 @@
 ## Main commands
 
 * `ansible-playbook -i inventory playbook.yaml --check` : This command check if the code works correctly before running it.
+* `ansible-config dump` : Visualize the current ansible's configuration.
+* `ansible-config init` : Initialize an ansible configuration file.
 
 ## Good practices and tips
 
@@ -43,3 +45,11 @@ To choose a specific version of ansible to install:
         name: nginx
         state: present
 ```
+
+### Ansible's configuration file
+
+The ansible's configuration file is named `ansible.cfg`. Ansible can find this file in different location in the following order:
+
+* In the current project folder
+* At `~/.ansible.cfg`
+* In a global system file at `/etc/ansible/ansible.cfg`
