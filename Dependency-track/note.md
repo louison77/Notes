@@ -41,4 +41,17 @@ Terraform is a command line tool. The main commands used to manage the resources
 
 * Easily deployable thanks to the docker-compose file.
 * The continuous analysis of the dependencies allows to quicly detect the vulnerabilities.
+* Easily integrable into DevSecOps/SecDevOps pipelines thanks to the CycloneDX format.
+* Monitores the components even after initial deploiement.
+* Easily integrable with Gitlab CI, Github action ans Jenkins -> good automation.
+* It is totally open source -> free, actively maintain and transparent.
+* Possibility to configure alerts.
+* 
 ### Cons
+
+* Required specific databases' configuration on large dependencies project to have good performances.
+* This is not a SAST.
+* Can be difficult to include into non-mature environments.
+* It depends on vulnerabilities databases(There are few sources) and if they lack some updates the detection will be limited.
+* Required a good alerts filtering.
+
