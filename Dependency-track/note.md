@@ -13,8 +13,6 @@
 
 ---
 
-Terraform is a command line tool. The main commands used to manage the resources are:
-
 1. ` curl -X "POST" "localhost:8081/api/v1/bom" \
                                                               -H "Content-Type: multipart/form-data" \
                                                               -H "X-Api-Key: [TO CHANGE]" \
@@ -46,7 +44,7 @@ Terraform is a command line tool. The main commands used to manage the resources
 * Easily integrable with Gitlab CI, Github action ans Jenkins -> good automation.
 * It is totally open source -> free, actively maintain and transparent.
 * Possibility to configure alerts.
-* 
+ 
 ### Cons
 
 * Required specific databases' configuration on large dependencies project to have good performances.
